@@ -1,7 +1,6 @@
 
 function truefactorial(num1) {
 	var rez = num1 ;
-	console.log(num1)
 	 if ( num1 === 1 || num1 === 0 ) {
 	 	rez = 1;
 	 	console.log(rez)
@@ -20,7 +19,7 @@ function truefactorial(num1) {
 }
 
 function factorial() {
-	var tnum1 = parseFloat(document.getElementById('num1').value) ;
+	var tnum1 = parseFloat(document.getElementById('num1').value ) ;
 	var trez = truefactorial ( tnum1 ) ;
 	document.getElementById('trez').innerHTML = 'Забирай на: ' + trez ;
 }
