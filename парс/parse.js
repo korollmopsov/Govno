@@ -26,11 +26,14 @@ function Tfiltr( A ) {
         }
         i ++ ;
     }
-    j=i
+    j = i ;
     for ( y ; y < B.length ; y ++ ){
-        if(y===i)
+        if ( y === i )
             continue ;
-        c += +B [y] * Math.pow(10, j-1-p);
-        j --
-    }return c
+        c += +B [ y ] * Math.pow(10, j - 1 - p ) ;
+        j -- ;
+    }
+    if ( c === 0 )
+        return NaN ;
+    return c ;
 }
