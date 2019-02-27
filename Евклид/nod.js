@@ -1,7 +1,7 @@
 function NoD() {
     var tnum1 = parseFloat(document.getElementById('num1').value ) ;
     var tnum2 = parseFloat(document.getElementById('num2').value ) ;
-    if ( tnum2 <= 0 || tnum1 <= 0 )
+    if ( tnum2 <= 0 || tnum1 <= 0 || parseInt(tnum1) != tnum1 || parseInt(tnum2) != tnum2)
         trez = 'Ты говно сосал' ;
     else trez = TNoD ( tnum1 , tnum2 ) ;
     document.getElementById('trez').innerHTML = 'НоД: ' + trez ;
